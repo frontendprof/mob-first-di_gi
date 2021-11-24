@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "slick": "^1.12.2",
+    "slick-slider": "^1.8.2"
+  }
+}
