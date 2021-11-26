@@ -383,5 +383,86 @@ body {
   .top-slider .slick-dots {
     bottom: 78px;
   }
+  .top-slider .slick-arrow {
+    width: 70px;
+    height: 70px;
+  }
+  .top-slider .slick-prev {
+    top: calc(50% - 70px);
+  }
+  .top-slider .slick-next {
+    bottom: calc(50% - 70px);
+  }
+}
+
+.contact {
+  background-color: #2b4074;
+  padding: 40px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.contact__title {
+  font-family: 'Roboto-Medium';
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.contact__text {
+  font-family: 'Dosis-Light';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 18px;
+  margin: 10px 0 40px;
+}
+
+.contact__btn {
+  height: 50px;
+  width: 200px;
+  border: none;
+  background-color: #f9f6e5;
+  color: #2b4074;
+  padding: 16px 15px;
+  border-radius: 3px;
+}
+
+@media (min-width: 768px) {
+  .contact {
+    text-align: left;
+  }
+  .contact__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact__box {
+    max-width: 427px;
+  }
+  .contact__text {
+    margin-bottom: 0;
+    padding-right: 6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  __box {
+    max-width: 695px;
+  }
+}
+
+@media (min-width: 1440px) {
+  __inner {
+    padding: 0 80px;
+  }
+  __box {
+    max-width: 796px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
