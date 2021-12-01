@@ -1,3 +1,24 @@
-$clr-accent: #2b4074;
+$clr-main: #2b4074;
 $clr-text: #4a4a4a;
 $clr-btn: #f9f6e5;
+$clr-default: #9b9b9b;
+$clr-accent: #797979;
+
+%robotocon-400 {
+  font-family: 'RobotoCondensed-Regular';
+  font-weight: 400;
+}
+%robotocon-700 {
+  font-family: 'RobotoCondensed-Bold';
+  font-weight: 700;
+}
+
+%dosis-300 {
+  font-family: 'Dosis-Light';
+  font-weight: 300;
+}
+
+%roboto-500 {
+  font-family: 'Roboto-Medium';
+  font-weight: 500;
+}

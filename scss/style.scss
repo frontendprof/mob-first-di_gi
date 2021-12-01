@@ -1,69 +1,9 @@
 @import 'fonts';
 @import 'variables';
+@import 'global';
 
-html {
-  box-sizing: border-box;
-}
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
-ul,
-li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-button {
-  padding: 0;
-}
-p {
-  margin: 0;
-}
-
-body {
-  min-width: 320px;
-  overflow-x: hidden;
-  font-family: 'Roboto-Regular', Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: 18px;
-}
-.container {
-  padding: 0 20px;
-}
-@media (min-width: 640px) {
-  .container {
-    padding: 0 30px;
-  }
-}
-@media (min-width: 768px) {
-  .container {
-    padding: 0 40px;
-  }
-}
-@media (min-width: 1024px) {
-  .container {
-    margin: 0 auto;
-    padding: 0 40px;
-  }
-}
-@media (min-width: 1440px) {
-  .container {
-    max-width: 1320px;
-  }
-}
 .header {
-  background-color: $clr-accent;
+  background-color: $clr-main;
   &__inner {
     height: 80px;
     display: flex;
@@ -73,7 +13,7 @@ body {
 }
 
 .header {
-  background-color: $clr-accent;
+  background-color: $clr-main;
   &__inner {
     height: 80px;
     display: flex;
@@ -83,7 +23,7 @@ body {
 }
 @media (min-width: 640px) {
   .header {
-    background-color: $clr-accent;
+    background-color: $clr-main;
     &__inner {
       height: 100px;
     }
@@ -117,10 +57,10 @@ body {
     width: 12px;
     height: 2px;
     border-radius: 1px;
-    background-color: $clr-accent;
+    background-color: $clr-main;
     top: 15px;
     left: 14px;
-    box-shadow: 0 4px 0 0 $clr-accent, 0 8px 0 0 $clr-accent;
+    box-shadow: 0 4px 0 0 $clr-main, 0 8px 0 0 $clr-main;
   }
 }
 @media (min-width: 1440px) {
@@ -197,7 +137,7 @@ body {
     button {
       font-size: 0;
       border: none;
-      background-color: $clr-accent;
+      background-color: $clr-main;
       padding: 0;
       width: 10px;
       height: 10px;
@@ -221,7 +161,7 @@ body {
     }
     &__btn {
       display: block;
-      background-color: $clr-accent;
+      background-color: $clr-main;
       color: $clr-btn;
       font-size: 18px;
       font-weight: 18px;
@@ -242,7 +182,7 @@ body {
       z-index: 5;
     }
     .slick-prev {
-      background-color: $clr-accent;
+      background-color: $clr-main;
       top: calc(50% - 56px);
     }
     .slick-next {
@@ -325,7 +265,7 @@ body {
 
 // Contacts section
 .contact {
-  background-color: $clr-accent;
+  background-color: $clr-main;
   padding: 40px 0;
   color: #fff;
   text-align: center;
@@ -347,7 +287,7 @@ body {
     width: 200px;
     border: none;
     background-color: $clr-btn;
-    color: $clr-accent;
+    color: $clr-main;
     padding: 16px 15px;
     border-radius: 3px;
   }
@@ -381,5 +321,47 @@ body {
   }
   &__box {
     max-width: 796px;
+  }
+}
+
+// Services section
+.services {
+  padding: 25px 0 31px;
+  text-align: center;
+  &__title {
+    margin-bottom: 49px;
+    color: $clr-main;
+  }
+  &__description {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 24px;
+    color: $clr-text;
+  }
+  &__text {
+    color: $clr-accent;
+    font-size: 15px;
+    line-height: 17px;
+    margin-bottom: 40px;
+  }
+  &__item {
+    min-height: 310px;
+    border: 1px solid $clr-btn;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__item-img {
+    margin-bottom: 30px;
+    display: block;
+    background-color: $clr-main;
+  }
+  &__title {
+    @extend %robotocon-700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2px;
+    color: $clr-text;
   }
 }
